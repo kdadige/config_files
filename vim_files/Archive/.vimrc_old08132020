@@ -1,4 +1,29 @@
 
+" Vundle - Plugin START
+" set nocompatible              " required
+" filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+" Plugin 'gmarik/Vundle.vim'
+
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+
+" ...
+
+" All of your Plugins must be added before the following line
+" call vundle#end()            " required
+" filetype plugin indent on    " required
+
+" Vundle - Plugin END
+
 syntax on
 
 set noerrorbells "no sound effects
@@ -14,8 +39,6 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-set path=$PWD/**
-set modifiable
 
 set colorcolumn=80
 highlight Colorcolumn ctermbg=0 guibg=lightgrey
@@ -35,7 +58,7 @@ Plug 'lyuts/vim-rtags' " For C++
 "Plug 'git@github.com:kien/ctrlp.vim.git' " For nice file finding
 Plug 'kien/ctrlp.vim' " For nice file finding
 "Plug 'git@github.com:Valloric/YouCompleteMe.git'
-"Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 Plug 'mbbill/undotree'
 
 " Initialize plugin system
